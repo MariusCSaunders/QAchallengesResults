@@ -1,3 +1,5 @@
-List the names and country codes of every country
+List the names and country codes of every country with Elizabeth II as its Head of State. You will need to fix the mistake first!
 
-SELECT CODE, Name FROM country;
+SELECT CODE, Name
+FROM country
+WHERE HeadOfState = 'Elisabeth II';
