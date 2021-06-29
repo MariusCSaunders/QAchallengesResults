@@ -1,0 +1,9 @@
+List the names of, and number of languages spoken by, the top ten most multilingual countries.
+
+SELECT t2.Name, COUNT(t1.CountryCode) AS NoOfLanguages
+FROM countrylanguage t1
+JOIN country t2
+ON t1.CountryCode=t2.Code
+GROUP BY CountryCode
+ORDER BY  NoOfLanguages DESC
+LIMIT 10;
