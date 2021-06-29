@@ -1,0 +1,8 @@
+List every country where over 50% of its population can speak German.
+
+SELECT t1.Name 
+FROM country t1
+JOIN countrylanguage t2
+ON t1.Code=t2.CountryCode
+WHERE t2.Language = 'German' 
+AND t2.Percentage > 50.0;
