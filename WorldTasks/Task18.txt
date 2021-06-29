@@ -1,0 +1,7 @@
+Which country has the worst life expectancy? Discard zero or null values.
+
+SELECT Name 
+FROM country
+WHERE LifeExpectancy > 0 AND LifeExpectancy IS NOT NULL
+ORDER BY LifeExpectancy
+Limit 1;
