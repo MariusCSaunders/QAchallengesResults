@@ -1,0 +1,5 @@
+Using a single query, list 25 cities around the world that start with the letter F.
+
+SELECT Name From city WHERE Name LIKE 'F%';
+
+Tried making it oneline due to formatting of question.
