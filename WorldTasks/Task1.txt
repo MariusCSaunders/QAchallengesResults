@@ -1,0 +1,5 @@
+Using COUNT, get the number of cities in the USA.
+
+SELECT COUNT(CountryCode)
+FROM city
+WHERE CountryCode = 'USA';
