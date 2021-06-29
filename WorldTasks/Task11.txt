@@ -1,0 +1,9 @@
+List the five largest cities by population in Japan.
+
+SELECT t1.Name
+FROM city t1
+JOIN country t2
+ON t2.Code=t1.CountryCode
+WHERE t2.Name='Japan'
+ORDER BY t1.Population DESC
+LIMIT 5;
