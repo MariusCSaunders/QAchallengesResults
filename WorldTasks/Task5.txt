@@ -1,0 +1,7 @@
+Using JOIN ... ON, list all the languages spoken in the Southeast Asia region
+
+SELECT t1.Language
+From countrylanguage t1
+JOIN country t2
+ON t1.CountryCode=t2.Code
+WHERE t2.Region = 'Southeast Asia';
