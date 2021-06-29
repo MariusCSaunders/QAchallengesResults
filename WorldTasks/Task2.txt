@@ -1,0 +1,5 @@
+Find out the population and life expectancy for people in Argentina.
+
+SELECT Population, LifeExpectancy
+FROM country
+WHERE Name = "Argentina";
