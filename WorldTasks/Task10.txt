@@ -1,0 +1,6 @@
+What are the top ten largest countries by area?
+
+SELECT Name
+FROM country 
+ORDER BY SurfaceArea DESC
+LIMIT 10;
