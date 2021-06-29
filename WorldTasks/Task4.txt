@@ -1,0 +1,7 @@
+Using JOIN ... ON, find the capital city of Spain.
+
+SELECT t1.Name
+From city t1
+JOIN country t2
+ON t2.capital=t1.id
+WHERE t2.Name = 'Spain';
