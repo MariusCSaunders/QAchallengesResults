@@ -1,0 +1,5 @@
+How many countries have gained independence since records began?
+
+SELECT COUNT(IndepYear)
+FROM country
+WHERE IndepYear IS NOT NULL;
