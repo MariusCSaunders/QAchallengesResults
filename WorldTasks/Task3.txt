@@ -1,0 +1,7 @@
+Using IS NOT NULL, ORDER BY, and LIMIT, which country has the highest life expectancy?
+
+SELECT Name
+FROM country
+WHERE LifeExpectancy IS NOT NULL
+ORDER BY LifeExpectancy DESC
+Limit 1;
