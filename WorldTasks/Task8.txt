@@ -1,0 +1,7 @@
+Using IS NOT NULL, ORDER BY, and LIMIT, which country has the lowest population? Discard non-zero populations.
+
+SELECT Name 
+FROM country
+WHERE Population != 0
+ORDER BY Population
+LIMIT 1;
