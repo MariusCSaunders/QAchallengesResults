@@ -1,0 +1,7 @@
+Using COUNT and JOIN ... ON, get the number of cities in China.
+
+SELECT COUNT(ID)
+FROM city t1
+JOIN country t2
+ON t2.Code=t1.CountryCode
+WHERE t2.Name = 'China';
