@@ -1,0 +1,7 @@
+List the top three most common government forms.
+
+SELECT GovernmentForm, COUNT(*)
+FROM country 
+GROUP BY GovernmentForm
+ORDER BY COUNT(*) DESC
+LIMIT 3;
