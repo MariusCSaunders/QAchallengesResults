@@ -1,0 +1,9 @@
+Which actor has appeared in the most films?
+
+SELECT a1.first_name, a1.last_name 
+FROM actor a1
+JOIN film_actor f1
+ON a1.actor_id = f1.actor_id
+GROUP BY a1.actor_id, a1.last_name 
+ORDER BY COUNT(*) DESC
+LIMIT 1;
