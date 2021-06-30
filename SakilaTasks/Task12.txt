@@ -1,0 +1,7 @@
+Using HAVING, list the last names that appear more than once, from highest to lowest frequency.
+
+SELECT last_name 
+FROM actor 
+GROUP BY last_name 
+HAVING  COUNT(last_name)>1 
+ORDER BY COUNT(last_name) DESC; 
