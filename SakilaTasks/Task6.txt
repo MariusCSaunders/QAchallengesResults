@@ -1,0 +1,5 @@
+Find every R-rated movie.
+
+SELECT * 
+FROM film 
+WHERE rating = 'R';
