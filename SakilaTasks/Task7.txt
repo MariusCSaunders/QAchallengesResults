@@ -1,0 +1,5 @@
+Find every non-R-rated movie.
+
+SELECT * 
+FROM film 
+WHERE rating != 'R';
