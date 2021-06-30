@@ -1,0 +1,4 @@
+How many distinct countries are there?
+
+SELECT COUNT(DISTINCT(country))
+FROM country;
